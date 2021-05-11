@@ -1,53 +1,23 @@
-body{
-    background-color: #10111A;
-}
-.main-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
-    grid-template-rows: 2fr 3fr 2fr;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.image-container{
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
+html {
+	height: 100%;
 }
-.image-wrapper{
-    text-align: center;
+
+body {
+	height: 100%;
+	background-color: #10111a;
 }
-.image-wrapper img{
-    width: 30%;
-    top: 0;
-    left : 0;
-    height: auto;
+
+.p2p {
+	font-family: "Press Start 2P", cursive;
 }
-.name-banner{
-    grid-column: 3 / 4;
-    grid-row : 3 / 4;
-    text-align: center;
-    
+
+.top-10 {
+	top: 10;
 }
-.name-wrapper{
-    color : #FFFFFF;
-    font-family: "Press Start 2P", cursive;
-    font-size: 1.5em;
-    padding : 1em;
-}
-.mini-bio{
-    color : #EAEAEA;
-    font-family: "Press Start 2P"
-}
-.social-links{
-    margin : 1em auto;
-    display : grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
-}
-.icon{
-    width : 20%;
-    height : auto;
-}
-.icon-path{
-    fill : white;
-}
-.icon-wrapper :hover{
-    cursor : pointer;
-}
+
