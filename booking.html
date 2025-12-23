@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Book a consultation with Daniel Olamide"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" type="image/png" href="./images/bitmoji.png" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/booking.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fonts/icofont/icofont.min.css" />
+    <script src="js/main.js"></script>
+    <title>Portfolio - Book a Meeting</title>
+  </head>
+  <body>
+    <div class="min-h-screen">
+      <!-- Navigation -->
+      <div
+        class="absolute top-10 md:top-0 md:right-0 w-full md:w-1/3 md:bg-black flex md:flex-col justify-between md:justify-center p-4 hidden md:h-full z-10"
+        id="menu"
+      >
+        <a href="./index.html" class="md:py-4 md:text-xl">
+          <span class="text-white p2p">Home</span>
+        </a>
+        <a href="./projects.html" class="md:py-4 md:text-xl">
+          <span class="text-white p2p">Projects</span>
+        </a>
+        <a href="./booking.html" class="md:py-4 md:text-xl">
+          <span class="text-white p2p">Book</span>
+        </a>
+        <a href="" class="md:py-4 md:text-xl">
+          <span class="text-white p2p">Blog</span>
+        </a>
+      </div>
+
+      <!-- Menu Toggle Button -->
+      <div class="flex justify-end items-start py-4 px-6">
+        <button
+          class="focus:outline-none menu-icon z-20"
+          onclick="toggleMenu()"
+        >
+          <i class="fas fa-bars text-white text-2xl" id="open-menu"></i>
+          <i
+            class="fas fa-times text-white text-2xl hidden"
+            id="close-menu"
+          ></i>
+        </button>
+      </div>
+
+      <!-- Main Content -->
+      <div class="container mx-auto px-4 py-8 md:py-12">
+        <!-- Header -->
+        <div class="text-center mb-8 md:mb-12">
+          <h1 class="p2p text-white text-2xl md:text-4xl mb-4">
+            Book a Meeting
+          </h1>
+          <p class="text-white text-sm md:text-base">
+            Select a date and time to schedule a consultation
+          </p>
+        </div>
+
+        <!-- Calendly Widget Container -->
+        <div class="calendly-container max-w-4xl mx-auto">
+          <!-- Calendly inline widget begin -->
+          <div
+            class="calendly-inline-widget"
+            data-url="https://calendly.com/danielolamide/interview"
+            style="min-width: 320px; height: 700px"
+          ></div>
+          <script
+            type="text/javascript"
+            src="https://assets.calendly.com/assets/external/widget.js"
+            async
+          ></script>
+          <!-- Calendly inline widget end -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

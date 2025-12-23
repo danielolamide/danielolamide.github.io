@@ -1,97 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Welcome to Daniel Olamide's portfolio">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-			crossorigin="anonymous"
-		/>
-		<link rel="shortcut icon" type="image/png" href="./images/bitmoji.png" />
-		<link
-			href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" type="text/css" href="./css/main.css" />
-		<link
-			href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./fonts/icofont/icofont.min.css" />
-		<script src="js/main.js"></script>
-		<title>Portfolio - Home</title>
-	</head>
-	<body>
-		<div class="h-full">
-			<div
-				class="absolute top-10 md:top-0 md:right-0 w-full md:w-1/3 md:bg-black flex md:flex-col justify-between md:justify-center p-4 hidden md:h-full z-10"
-				id="menu"
-			>
-				<a href="" class="md:py-4 md:text-xl"
-					><span class="text-white p2p">Home</span></a
-				>
-				<a href="./projects.html" class="md:py-4 md:text-xl"
-					><span class="text-white p2p">Projects</span></a
-				>
-				<a href="" class="md:py-4 md:text-xl"
-					><span class="text-white p2p">Blog</span></a
-				>
-			</div>
-			<div class="flex flex-col h-full">
-				<div class="flex flex-1 justify-end items-start py-4 px-6">
-					<button
-						class="focus:outline-none menu-icon z-20"
-						onclick="toggleMenu()"
-					>
-						<i class="fas fa-bars text-white text-2xl" id="open-menu"></i>
-						<i
-							class="fas fa-times text-white text-2xl hidden"
-							id="close-menu"
-						></i>
-					</button>
-				</div>
-				<div class="flex-1">
-					<div class="flex justify-center py-2 w-full">
-						<img
-							class="md:w-1/6"
-							src="./images/portfolio-image.png"
-							alt="Daniel Olamide"
-						/>
-					</div>
-					<div class="flex flex-col items-center py-2">
-						<span class="p2p text-white text-xl md:text-3xl text-center py-2"
-							>Wole Joseph Daniel Olamide</span
-						>
-						<span
-							class="p2p py-2 text-white text-lg md:text-2xl text-center py-2"
-							>Software eNginEeR</span
-						>
-						<div class="flex justify-around w-3/4 py-4">
-							<a href="https://www.github.com/danielolamide" target="_blank">
-								<i class="fab fa-github text-white text-4xl"></i
-							></a>
-							<a href="https://www.twitter.com/WoleOlamide" target="_blank"
-								><i class="fab fa-twitter text-white text-4xl"></i
-							></a>
-							<a
-								href="https://www.linkedin.com/in/daniel-olamide-64273a142/"
-								target="_blank"
-								><i class="fab fa-linkedin text-white text-4xl"></i>
-							</a>
-							<a href="https://www.instagram.com/olacodes/" target="_blank"
-								><i class="fab fa-instagram text-white text-4xl"></i
-							></a>
-							<a href="mailto:djokogo@gmail.com" target="_blank"
-								><i class="far fa-envelope text-white text-4xl"></i
-							></a>
-						</div>
-					</div>
-				</div>
-				<div class="flex-1"></div>
-			</div>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to Daniel Olamide's portfolio" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" type="image/png" href="./images/bitmoji.png" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fonts/icofont/icofont.min.css" />
+    <script src="js/main.js"></script>
+    <title>Portfolio - Home</title>
+  </head>
+  <body>
+    <div class="h-full">
+      <div
+        class="absolute top-10 md:top-0 md:right-0 w-full md:w-1/3 md:bg-black flex md:flex-col justify-between md:justify-center p-4 hidden md:h-full z-10"
+        id="menu"
+      >
+        <a href="./index.html" class="md:py-4 md:text-xl"
+          ><span class="text-white p2p">Home</span></a
+        >
+        <a href="./projects.html" class="md:py-4 md:text-xl"
+          ><span class="text-white p2p">Projects</span></a
+        >
+        <a href="./booking.html" class="md:py-4 md:text-xl"
+          ><span class="text-white p2p">Book</span></a
+        >
+        <a href="" class="md:py-4 md:text-xl"
+          ><span class="text-white p2p">Blog</span></a
+        >
+      </div>
+      <div class="flex flex-col h-full">
+        <div class="flex flex-1 justify-end items-start py-4 px-6">
+          <button
+            class="focus:outline-none menu-icon z-20"
+            onclick="toggleMenu()"
+          >
+            <i class="fas fa-bars text-white text-2xl" id="open-menu"></i>
+            <i
+              class="fas fa-times text-white text-2xl hidden"
+              id="close-menu"
+            ></i>
+          </button>
+        </div>
+        <div class="flex-1">
+          <div class="flex justify-center py-2 w-full">
+            <img
+              class="w-1/2 md:w-1/6 rounded-lg"
+              src="./images/portfolio-image.png"
+              alt="Daniel Olamide"
+            />
+          </div>
+          <div class="flex flex-col items-center py-2">
+            <span class="p2p text-white text-xl md:text-3xl text-center py-2"
+              >Wole Joseph Daniel Olamide</span
+            >
+            <span
+              class="p2p py-2 text-white text-lg md:text-2xl text-center py-2"
+              >Software eNginEeR</span
+            >
+            <div class="flex justify-around w-3/4 py-4">
+              <a href="https://www.github.com/danielolamide" target="_blank">
+                <i class="fab fa-github text-white text-4xl"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/daniel-olamide-64273a142/"
+                target="_blank"
+                ><i class="fab fa-linkedin text-white text-4xl"></i>
+              </a>
+              <a href="mailto:djokogo@gmail.com" target="_blank"
+                ><i class="far fa-envelope text-white text-4xl"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1"></div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,27 @@
+/* Booking Page Styles */
+
+/* Calendly Widget Container */
+.calendly-container {
+	min-height: 700px;
+	padding: 20px 0;
+}
+
+/* Override Calendly widget background to match site theme */
+.calendly-inline-widget {
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+	.calendly-container {
+		min-height: 600px;
+		padding: 10px 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.calendly-container {
+		min-height: 550px;
+	}
+}

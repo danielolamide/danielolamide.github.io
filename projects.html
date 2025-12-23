@@ -2,7 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Daniel Olamide's Projects">
 		<title>Portfolio - Projects</title>
 		<link rel="shortcut icon" type="image/png" href="./images/bitmoji.png" />
 		<link
@@ -19,15 +20,53 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/main.css" type="text/css" media="all" />
+		<script src="js/main.js"></script>
 	</head>
 	<body>
-		<div class="h-full flex flex-col justify-center items-center">
-			<span class="p2p text-4xl text-white">Coming Soon</span>
-			<span class="p2p text-white"
-				>Meanwhile, here's my
-				<a href="https://www.github.com/danielolamide" target="_blank">
-					<i class="fab fa-github text-white text-4xl"></i></a
-			></span>
+		<div class="h-full">
+			<!-- Navigation -->
+			<div
+				class="absolute top-10 md:top-0 md:right-0 w-full md:w-1/3 md:bg-black flex md:flex-col justify-between md:justify-center p-4 hidden md:h-full z-10"
+				id="menu"
+			>
+				<a href="./index.html" class="md:py-4 md:text-xl">
+					<span class="text-white p2p">Home</span>
+				</a>
+				<a href="./projects.html" class="md:py-4 md:text-xl">
+					<span class="text-white p2p">Projects</span>
+				</a>
+				<a href="./booking.html" class="md:py-4 md:text-xl">
+					<span class="text-white p2p">Book</span>
+				</a>
+				<a href="" class="md:py-4 md:text-xl">
+					<span class="text-white p2p">Blog</span>
+				</a>
+			</div>
+
+			<!-- Menu Toggle Button -->
+			<div class="flex justify-end items-start py-4 px-6">
+				<button
+					class="focus:outline-none menu-icon z-20"
+					onclick="toggleMenu()"
+				>
+					<i class="fas fa-bars text-white text-2xl" id="open-menu"></i>
+					<i
+						class="fas fa-times text-white text-2xl hidden"
+						id="close-menu"
+					></i>
+				</button>
+			</div>
+
+			<!-- Main Content -->
+			<div class="flex flex-col justify-center items-center" style="min-height: calc(100vh - 80px);">
+				<span class="p2p text-4xl text-white mb-4">Coming Soon</span>
+				<span class="p2p text-white text-center">
+					Meanwhile, here's my
+					<a href="https://www.github.com/danielolamide" target="_blank">
+						<i class="fab fa-github text-white text-4xl"></i>
+					</a>
+				</span>
+			</div>
 		</div>
 	</body>
 </html>
